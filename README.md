@@ -13,7 +13,7 @@ updated: 2026-03-15
 
 A **Model Context Protocol (MCP)** server that lets LLMs and agents read Ultrahuman bio-data (ring, sleep, recovery, glucose, and more) via the [Ultrahuman Partner API](https://ultrahumanapp.notion.site/UltraSignal-API-Documentation-5f32ec15ef6b4fa5bc8249f7b875d212).
 
-**Shareable and open** – use it in 🦞 [OpenCalw](https://github.com/open-calw), [Claude Code](https://claude.com/code), or any MCP client. Credentials stay in your environment; nothing is sent to third parties.
+**Shareable and open** – use it in 🦞 [OpenClaw](https://github.com/openclaw/openclaw), [Claude Code](https://claude.com/code), Perplexity computer, Kimi Claw, or any MCP client. Credentials stay in your environment; nothing is sent to third parties.
 
 ---
 
@@ -28,7 +28,7 @@ A **Model Context Protocol (MCP)** server that lets LLMs and agents read Ultrahu
 ## What you can do
 
 - 🩺 **Daily metrics** – Sleep, heart rate, HRV, steps, recovery, glucose, metabolic score, VO2 max, and more (by email + date).
-- 🤖 Use it from any MCP client: 🦞 OpenCalw, Claude Code, Cursor, or your own agents.
+- 🤖 Use it from any MCP client: 🦞 OpenClaw, Claude Code, Cursor, Perplexity computer, Kimi Claw, or your own agents.
 - 🔐 Tokens and email in env vars only – no secrets in code.
 
 ---
@@ -94,7 +94,7 @@ Once you receive your token and (if applicable) Partner ID, set them in `.env` a
    ./scripts/run_mcp.sh
    ```
 
-   In your client (🦞 OpenCalw, Claude Code, Cursor, etc.): add this server in MCP settings with the same command and project directory so it can load `.env`.
+   In your client (🦞 OpenClaw, Claude Code, Cursor, Perplexity computer, Kimi Claw, etc.): add this server in MCP settings with the same command and project directory so it can load `.env`.
 
 ---
 
@@ -142,7 +142,7 @@ This repo includes **skills** that teach an LLM how to use the MCP in real workf
 
 All of the above (weekly reports, predictions, correlations, coach view, streaks, etc.) are implemented in the [Ultrahuman analytics](skills/ultrahuman-analytics/) skill.
 
-**🦞 Using with OpenCalw or Claude Code:** Add the Ultrahuman MCP in your client (🦞 [OpenCalw](https://github.com/open-calw) or [Claude Code](https://claude.com/code)), then include the skill (e.g. `skills/ultrahuman-biodata-assistant/SKILL.md` in your instructions or rules) so the model uses the MCP for sleep, recovery, and daily metrics.
+**🦞 Using with OpenClaw, Claude Code, Perplexity computer, or Kimi Claw:** Add the Ultrahuman MCP in your client (🦞 [OpenClaw](https://github.com/openclaw/openclaw), [Claude Code](https://claude.com/code), Perplexity computer, or Kimi Claw), then include the skill (e.g. `skills/ultrahuman-biodata-assistant/SKILL.md` in your instructions or rules) so the model uses the MCP for sleep, recovery, and daily metrics.
 
 **📄 Exporting reports to PDF:** Ask the assistant for a "PDF summary" or "export last 7 days" (with the analytics skill enabled). It will return copy-paste-ready Markdown (table + summary). Save it to a `.md` file, then create a PDF e.g. with [pandoc](https://pandoc.org/): `pandoc summary.md -o report.pdf`, or use your editor’s "Print to PDF" / "Export to PDF".
 
