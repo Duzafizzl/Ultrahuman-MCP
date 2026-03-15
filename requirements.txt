@@ -1,0 +1,12 @@
+# Ultrahuman MCP server – Python 3.10+
+# File: requirements.txt
+# Description: Dependencies for Ultrahuman MCP server.
+# Created: 2026-03-15
+# Last updated: 2026-03-15
+
+mcp[cli]>=1.0.0
+httpx>=0.25.0
+pydantic>=2.0.0
+# Optional for PDF report with diagrams (scripts/generate_ultrahuman_pdf_report.py):
+matplotlib>=3.7.0
+numpy>=1.24.0

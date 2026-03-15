@@ -1,0 +1,43 @@
+{
+  "skill_name": "ultrahuman-biodata-assistant",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Give me my morning brief for yesterday. How did I sleep and how's my recovery?",
+      "expected_output": "A short summary with sleep score, recovery score, and key metrics (e.g. HR, HRV, steps) for yesterday, using the Ultrahuman MCP. Date resolved to YYYY-MM-DD.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "How was my recovery last night? Am I good to train today?",
+      "expected_output": "Recovery-focused answer using ultrahuman_get_daily_metrics, with recovery score, HRV, sleep, and a descriptive one-line readiness takeaway (no medical advice).",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Compare my sleep for the last 3 days.",
+      "expected_output": "Three daily metric fetches, then a compact comparison (table or bullets) of sleep (and optionally recovery) across the 3 days, with a brief trend note.",
+      "files": []
+    }
+  ],
+  "evals_analytics": [
+    {
+      "id": 1,
+      "prompt": "Give me my weekly report for the last 7 days. Best and worst night?",
+      "expected_output": "Seven daily fetches, then summary with averages, table (date | sleep | recovery | HRV | steps), best/worst night, and a one-line trend.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What's my current recovery streak?",
+      "expected_output": "Fetch last 7–14 days, count consecutive nights with recovery ≥ 7 from most recent backwards; report streak count.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "How does my sleep relate to my glucose this week?",
+      "expected_output": "Fetch last 7–14 days, group by sleep length or score, compare average time_in_target or glucose variability; one-sentence pattern, no causation.",
+      "files": []
+    }
+  ]
+}

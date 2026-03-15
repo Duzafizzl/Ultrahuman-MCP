@@ -1,0 +1,11 @@
+# Ultrahuman MCP – ignore local env and secrets
+.venv/
+venv/
+.env
+*.pyc
+__pycache__/
+.pytest_cache/
+.mcp/
+
+# Generated PDF reports (scripts/generate_ultrahuman_pdf_report.py)
+reports/
