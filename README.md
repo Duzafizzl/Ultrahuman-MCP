@@ -19,7 +19,7 @@ A **Model Context Protocol (MCP)** server that lets LLMs and agents read Ultrahu
 
 ## Shout-out to Ultrahuman
 
-**Thanks to the Ultrahuman team** for providing the Partnership API and enabling developers to build on top of their bio-data platform. This MCP exists because of that partnership and the [Ultrahuman Vision](https://vision.ultrahuman.com/) developer experience. If you use this tool, consider checking out [Ultrahuman](https://www.ultrahuman.com/) and their docs.
+**Thanks to the Ultrahuman team** for providing the Partnership API and enabling developers to build on top of their bio-data platform. This MCP exists because of that partnership and the [Ultrahuman Vision](https://vision.ultrahuman.com/) developer experience. If you use this tool, consider checking out [Ultrahuman](https://www.ultrahuman.com/), their [GitHub](https://github.com/Ultrahuman-tech), and their docs.
 
 **Disclaimer:** This is a **private, community project** and is **not officially affiliated with or endorsed by Ultrahuman**. It uses the public Partner API in an unofficial capacity. I’d be happy to collaborate—including with the Ultrahuman team—to align with official docs, branding, or best practices.
 
@@ -154,6 +154,7 @@ All of the above (weekly reports, predictions, correlations, coach view, streaks
 
 - [Ultrahuman Partner API (Notion)](https://ultrahumanapp.notion.site/UltraSignal-API-Documentation-5f32ec15ef6b4fa5bc8249f7b875d212)
 - [Ultrahuman Vision developer docs](https://vision.ultrahuman.com/developer-docs)
+- [Ultrahuman on GitHub](https://github.com/Ultrahuman-tech)
 - [MCP specification](https://modelcontextprotocol.io/)
 
 ---
