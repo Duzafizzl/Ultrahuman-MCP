@@ -2,7 +2,7 @@
 title: api_summary.md
 description: Short reference for Ultrahuman Partner API (auth, params, response).
 created: 2026-03-16
-updated: 2026-03-15
+updated: 2026-03-18
 ---
 
 # Ultrahuman Partner API – Summary
@@ -73,6 +73,11 @@ Full example: [Response.json](https://ultrahumanapp.notion.site/Response-json-ae
 | vo2_max | value |
 
 Use this summary when writing skills or tools that interpret or display Ultrahuman data.
+
+## Note on "steps" (avg vs total)
+
+The API provides `steps.object.values` and `steps.object.avg`. In practice, `avg` may be an average-per-bucket value and can look misleadingly low for "steps today".
+For user-facing displays, prefer computing a **daily total** from `values` (cumulative last value, or sum of increments) with `avg` only as a fallback.
 
 ## Live value (for substrate / agent context)
 
